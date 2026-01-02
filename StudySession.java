@@ -1,6 +1,8 @@
+import java.io.Serializable;
 import java.util.Date;
 
-public class StudySession {
+public class StudySession implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String subject;
     private Date startTime;
     private long durationSeconds;
